@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Inner {
+  background-image: url("https://imgs.search.brave.com/ZSKlESTIdsK5O66wUVAdYgtZXTNemUmyXlnfyGYuQv8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9zb2NjZXItZm9v/dGJhbGwtc3RhZGl1/bS13aXRoLXNwb3Rs/aWdodHNfMTYzNzgy/LTM1NTAuanBnP3Np/emU9NjI2JmV4dD1q/cGc");
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

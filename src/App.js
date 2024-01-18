@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import PlayersList from "./PlayersList";
+import "./App.css"
+const style = { textAlign: "center", display: "flex", flexDirection: "column", alignItems: "center"}
+const newstyle= { color: "white", marginBottom: "2em", fontWeight: "bolder", marginTop: "30px"}
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Inner" style={style}>
+      <h1 style={newstyle}>Football Players App</h1>
+      <PlayersList />
     </div>
   );
-}
-
+};
 export default App;
